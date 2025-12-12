@@ -173,6 +173,26 @@ body.about {
         margin-bottom: 2rem;
     }
 
+    /* --- ABOUT page: prevent the symbol from overlapping text --- */
+body.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body.about .about-wrapper {
+    flex: 1;
+  }
+  
+  body.about .footer-symbol {
+    position: relative;   /* override absolute */
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 28px auto 40px;
+  }
+  
+
     .about-wrapper {
         padding-top: 90px;
         padding-left: 7%;
