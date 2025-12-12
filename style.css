@@ -1,0 +1,174 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: #d7c6b4;
+    background-color: #3a1c11;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Fade-in animation on load */
+.fade {
+    opacity: 0;
+    animation: fadein 1.2s ease forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* HOME PAGE BACKGROUND */
+body.home {
+    background-image: url("images/home-bg.webp");
+}
+
+/* ABOUT PAGE BACKGROUND */
+body.about {
+    background-image: url("images/about-bg.webp");
+}
+
+/* CENTER CONTENT FOR HOME (STUDIO / skelton / tagline / nav) */
+.center-content {
+    position: absolute;
+    top: 52%;                          /* main vertical adjustment */
+    left: 50%;
+    transform: translate(-50%, -55%);  /* optical balancing */
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+/* "STUDIO" */
+.small-uppercase {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.25em;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* main logo */
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    letter-spacing: 0.02em;
+    margin-bottom: 0.2rem;
+}
+
+/* tagline */
+.tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.05rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 3.2rem;
+}
+
+/* NAVIGATION under tagline, ABOVE symbol */
+.main-nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    margin-top: 0;
+    margin-bottom: 2.4rem;            /* distance above symbol */
+}
+
+.main-nav a {
+    color: #d7c6b4;
+    text-decoration: none;
+}
+
+.main-nav span {
+    margin: 0 0.7rem;
+}
+
+/* SYMBOL at the bottom of page */
+.footer-symbol {
+    position: absolute;
+    bottom: 70px;                     /* adjust to taste */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    z-index: 9999;
+}
+
+.footer-symbol img {
+    width: 48px;
+    height: auto;
+}
+
+/* ABOUT PAGE LAYOUT */
+.about-wrapper {
+    width: min(680px, 90vw);   /* wider on big screens, responsive on small */
+    margin-left: 10%;
+    margin-right: auto;
+    padding-top: 120px;
+    padding-bottom: 160px;     /* keeps clear of the bottom symbol area */
+}
+
+
+.about-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    margin-bottom: 2.5rem;
+    text-transform: none;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 900px;
+}
+
+.about-text p {
+    margin-bottom: 1.6rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .center-content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 1rem;
+    }
+
+    .tagline {
+        margin-bottom: 2.6rem;
+    }
+
+    .main-nav {
+        margin-bottom: 2rem;
+    }
+
+    .about-wrapper {
+        padding-top: 90px;
+        padding-left: 7%;
+        padding-right: 7%;
+        max-width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .footer-symbol {
+        bottom: 40px;
+    }
+}
