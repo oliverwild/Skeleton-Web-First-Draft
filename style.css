@@ -84,6 +84,14 @@ body.about {
     margin-bottom: 2.4rem;            /* distance above symbol */
 }
 
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;   /* prevents wrapping */
+}
+
+
 .main-nav a {
     color: #d7c6b4;
     text-decoration: none;
@@ -146,6 +154,16 @@ body.about {
         transform: translate(-50%, -50%);
         padding: 0 1rem;
     }
+
+    
+    .main-nav {
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+        }
+    
+        .main-nav span {
+            margin: 0 0.4rem;
+        }
 
     .tagline {
         margin-bottom: 2.6rem;
