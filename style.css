@@ -68,13 +68,10 @@ body.about { background-image: url("images/about-bg.webp"); }
     padding: 3rem 1.5rem 0;
 }
 
-/* Supplied logo artwork (STUDIO / skelton).
-   Nudged right ~1.2%: the wordmark's ink leans left by design,
-   so a small optical correction makes it read as centered. */
+/* Supplied logo artwork (STUDIO / skelton) */
 .logo-img {
     width: clamp(240px, 30vw, 430px);
     height: auto;
-    transform: translateX(1.2%);
 }
 
 /* tagline */
