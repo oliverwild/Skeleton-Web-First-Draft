@@ -172,7 +172,7 @@ body.about { background-image: url("images/about-bg.webp"); }
 }
 
 .footer-symbol img {
-    width: 44px;
+    width: 34px;
     height: auto;
     display: block;
 }
@@ -240,7 +240,7 @@ body.about { background-image: url("images/about-bg.webp"); }
     }
 
     .footer-symbol img {
-        width: 40px;
+        width: 30px;
     }
 
     .about-wrapper {
