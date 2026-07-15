@@ -94,7 +94,7 @@ body.about { background-image: url("images/about-bg.webp"); }
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    margin-bottom: 3rem;
+    margin-bottom: 124px; /* clears the fixed symbol */
 }
 
 .main-nav a {
@@ -110,12 +110,15 @@ body.about { background-image: url("images/about-bg.webp"); }
     margin: 0 0.7rem;
 }
 
-/* SYMBOL - always centered at the bottom of the page */
+/* SYMBOL - pinned to the bottom of the screen, always visible */
 .footer-symbol {
-    margin: 0 auto;
-    padding-bottom: 44px;
+    position: fixed;
+    bottom: 44px;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0.9;
     text-align: center;
+    z-index: 10;
 }
 
 .footer-symbol img {
@@ -132,7 +135,7 @@ body.about { background-image: url("images/about-bg.webp"); }
     margin-left: 10%;
     margin-right: auto;
     padding-top: 110px;
-    padding-bottom: 60px;
+    padding-bottom: 150px; /* clears the fixed symbol */
 }
 
 .about-title {
@@ -175,7 +178,7 @@ body.about { background-image: url("images/about-bg.webp"); }
     .main-nav {
         font-size: 0.78rem;
         letter-spacing: 0.1em;
-        margin-bottom: 2.4rem;
+        margin-bottom: 104px;
     }
 
     .main-nav span {
@@ -183,7 +186,7 @@ body.about { background-image: url("images/about-bg.webp"); }
     }
 
     .footer-symbol {
-        padding-bottom: 36px;
+        bottom: 32px;
     }
 
     .footer-symbol img {
@@ -196,7 +199,7 @@ body.about { background-image: url("images/about-bg.webp"); }
         padding-right: 7%;
         margin-left: 0;
         width: 100%;
-        padding-bottom: 48px;
+        padding-bottom: 130px;
     }
 
     .about-text {
